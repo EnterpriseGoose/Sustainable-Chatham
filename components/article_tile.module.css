@@ -1,0 +1,46 @@
+.tile {
+	background-color: #f1f1f1;
+	border-radius: calc(1.5vw + 30px);
+	display: flex;
+	width: 25vw;
+	min-height: 100%;
+	transition: all 0.25s ease-in-out;
+	color: black;
+}
+
+@media (max-width: 720px) {
+	.tile {
+		width: 35vw;
+	}
+}
+@media (max-width: 500px) {
+	.tile {
+		width: 90vw;
+	}
+}
+
+.tile:hover {
+	transform: scale(1.05);
+	background-color: #e9e9e9;
+}
+
+.text {
+	width: 90%;
+	height: 90%;
+	margin: 10%;
+	font: Alata, sans-serif;
+}
+
+.title {
+	font-size: calc(0.8vw + 20px);
+	padding-bottom: 1vh;
+}
+
+.desc {
+	font-size: calc(0.5vw + 15px);
+}
+
+.note {
+	padding-top: 1vh;
+	font-size: calc(0.4vw + 12px);
+}

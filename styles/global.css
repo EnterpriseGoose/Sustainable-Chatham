@@ -1,0 +1,12 @@
+p,
+span,
+a,
+div {
+	font-family: 'Alata', sans-serif;
+	line-height: 1.25;
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+}
