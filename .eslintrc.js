@@ -1,0 +1,51 @@
+module.exports = {
+	env: {
+		browser: true,
+		es2021: true,
+	},
+	extends: [
+		'plugin:react/recommended',
+		'airbnb-typescript',
+		'prettier',
+		'plugin:@next/next/recommended',
+	],
+	parser: '@typescript-eslint/parser',
+	parserOptions: {
+		ecmaFeatures: {
+			jsx: true,
+		},
+		project: './tsconfig.json',
+		ecmaVersion: 12,
+		sourceType: 'module',
+	},
+	plugins: ['react', '@typescript-eslint'],
+	rules: {
+		'@typescript-eslint/semi': ['warn', 'always'],
+		'@typescript-eslint/indent': ['warn', 'tab'],
+		'linebreak-style': ['error', 'windows'],
+		'@typescript-eslint/no-unused-vars': 'off',
+		'no-console': 'off',
+		'no-tabs': 'off',
+		'max-len': [
+			'warn',
+			{
+				code: 80,
+				tabWidth: 4,
+				comments: 150,
+				ignoreTrailingComments: true,
+				ignoreUrls: true,
+				ignoreStrings: true,
+				ignoreTemplateLiterals: true,
+				ignoreTemplateLiterals: true,
+			},
+		],
+		'react/react-in-jsx-scope': 'off',
+		'react/jsx-props-no-spreading': 'off',
+		'@typescript-eslint/no-unused-expressions': 'off',
+		'react/no-unescaped-entities': 'off',
+		'prefer-template': 'off',
+		'@next/next/no-page-custom-font': 'off',
+		'@next/next/no-img-element': 'off',
+		'react/require-default-props': 'warn',
+	},
+};
